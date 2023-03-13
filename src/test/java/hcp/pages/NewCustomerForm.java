@@ -1,7 +1,6 @@
 package hcp.pages;
 
 import hcp.datastructure.CustomerDataStructure;
-import hcp.utils.WaitUtils;
 import io.cucumber.datatable.DataTable;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
