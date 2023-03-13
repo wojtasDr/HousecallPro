@@ -15,7 +15,7 @@ import org.springframework.stereotype.Component;
 import java.util.Map;
 
 @Component
-@Profile({"chrome", "edge"})
+@Profile({"chrome", "chromeMac", "edge"})
 public class NewJobPage {
     private WebDriver driver;
     private WaitUtils waitUtils;
@@ -90,12 +90,12 @@ public class NewJobPage {
 
     public void setLineItemQty(String qty) {
         lineItemQtyInput.click();
-        lineItemQtyInput.sendKeys(Keys.chord(Keys.CONTROL, "a", Keys.DELETE), qty);
+        lineItemQtyInput.sendKeys(Keys.chord(Keys.HOME), qty);
     }
 
     public void setLineItemUnitPrice(String unitPrice) {
         lineItemUnitPriceInput.click();
-        lineItemUnitPriceInput.sendKeys(Keys.chord(Keys.CONTROL, "a", Keys.DELETE), unitPrice);
+        lineItemUnitPriceInput.sendKeys(Keys.chord(Keys.HOME), unitPrice);
     }
 
     public void setLineItemDescription(String description) {
@@ -105,7 +105,7 @@ public class NewJobPage {
 
     public void setLineItemUnitCost(String unitCost) {
         lineItemUnitCostInput.click();
-        lineItemUnitCostInput.sendKeys(Keys.chord(Keys.CONTROL, "a", Keys.DELETE), unitCost);
+        lineItemUnitCostInput.sendKeys(Keys.chord(Keys.HOME), unitCost);
     }
 
     public void addLineItem(DataTable lineItemData) {

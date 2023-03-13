@@ -11,15 +11,21 @@ In order to run it please launch following maven command for chrome v.110
 ```sh
 mvn clean verify -Dspring.profiles.active=chrome 
 ```
-or for edge v.110
+for edge v.110
 ```sh
 mvn clean verify -Dspring.profiles.active=edge
 ```
 
+for chrome v.110 on mac_64
+```sh
+mvn clean verify -Dspring.profiles.active=chromeMac
+```
+
+
 # Selenium drivers update
 Selenium drivers are stored in \resources\drivers directory.
-Drivers are compatible with Windows, if you need to run in on macOS, please replace 
-chromedriver.exe and msedgedriver.exe with macOS compatible versions.
+Drivers are compatible with Windows and macOS (mac_64), if you need to run test on mac m1 , please replace 
+chromedriver with compatible version. The same for web browsers versions.
 
 # Test reports
 Test reports are generated after each test run and are stored in

@@ -17,7 +17,7 @@ import java.util.Arrays;
 import java.util.Map;
 
 @Component
-@Profile({"chrome", "edge"})
+@Profile({"chrome", "chromeMac", "edge"})
 public class NewCustomerForm {
     private WebDriver driver;
 

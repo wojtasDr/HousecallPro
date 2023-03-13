@@ -13,7 +13,7 @@ import org.springframework.stereotype.Component;
 import java.util.List;
 
 @Component
-@Profile({"chrome", "edge"})
+@Profile({"chrome", "chromeMac", "edge"})
 public class JobDetailsPage {
     private WebDriver driver;
     private WaitUtils waitUtils;
