@@ -20,10 +20,10 @@ public class JobDetailsPage {
 
     //Activity feed elements
     @FindBy(xpath = "//*[contains(text(),'Activity feed')]/../../../../..")
-    WebElement activityFeedSection;
+    private WebElement activityFeedSection;
 
     @FindBy(xpath = "//*[contains(@class,'Summary-root')]")
-    List<WebElement> activityFeedSectionPanels;
+    private List<WebElement> activityFeedSectionPanels;
 
     @Autowired
     public JobDetailsPage(WebDriver driver, WaitUtils waitUtils) {
@@ -42,8 +42,5 @@ public class JobDetailsPage {
             el.click();
             waitUtils.waitUntilElementAttributeHasValue(30, el, "aria-expanded", "true");
         });
-
     }
-
-
 }

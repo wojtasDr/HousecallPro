@@ -22,67 +22,67 @@ public class NewCustomerForm {
 
     //Contact Info elements
     @FindBy(id = "customer-dialog-first-name")
-    WebElement firstNameInput;
+    private WebElement firstNameInput;
 
     @FindBy(name = "last_name")
-    WebElement lastNameInput;
+    private WebElement lastNameInput;
 
     @FindBy(name = "mobile_number")
-    WebElement mobilePhoneInput;
+    private WebElement mobilePhoneInput;
 
     @FindBy(name = "company")
-    WebElement companyInput;
+    private WebElement companyInput;
 
     @FindBy(name = "display_name")
-    WebElement displayNameInput;
+    private WebElement displayNameInput;
 
     @FindBy(name = "home_number")
-    WebElement homeNumberInput;
+    private WebElement homeNumberInput;
 
     @FindBy(name = "job_title")
-    WebElement jobTitleInput;
+    private WebElement jobTitleInput;
 
     @FindBy(name = "email")
-    WebElement emailInput;
+    private WebElement emailInput;
 
     @FindBy(name = "work_number")
-    WebElement workPhoneInput;
+    private WebElement workPhoneInput;
 
     //Address elements
     @FindBy(xpath = "//input[contains(@id,'addresses[0].street')]")
-    WebElement streetInput;
+    private WebElement streetInput;
 
     @FindBy(xpath = "//input[contains(@name,'addresses[0].street_line_2')]")
-    WebElement unitInput;
+    private WebElement unitInput;
 
     @FindBy(xpath = "//input[contains(@name,'addresses[0].city')]")
-    WebElement cityInput;
+    private WebElement cityInput;
 
     @FindBy(xpath = "//*[contains(@id,'addresses[0].state')]")
-    WebElement stateInput;
+    private WebElement stateInput;
 
     @FindBy(xpath = "//input[contains(@name,'addresses[0].zip')]")
-    WebElement zipInput;
+    private WebElement zipInput;
 
     @FindBy(xpath = "//*[contains(@name,'addresses[0].notes')]")
-    WebElement addressNotesInput;
+    private WebElement addressNotesInput;
 
     //Notes elements
     @FindBy(name = "notes")
-    WebElement customerNotesInput;
+    private WebElement customerNotesInput;
 
     @FindBy(xpath = "//*[contains(@placeholder,'Search customers')]")
-    WebElement thisCustomerBillsToInput;
+    private WebElement thisCustomerBillsToInput;
 
     @FindBy(xpath = "//*[contains(text(),'ustomer tag')]/..//input")
-    WebElement customerTagsInput;
+    private WebElement customerTagsInput;
 
     @FindBy(xpath = "//*[contains(text(),'ead source')]/..//input")
-    WebElement leadSourceInput;
+    private WebElement leadSourceInput;
 
     //Form footer elements
     @FindBy(xpath = "//button/*[contains(text(),'create')]")
-    WebElement createCustomerButton;
+    private WebElement createCustomerButton;
 
     private By getStateListElementLocator(String state) {
         return By.xpath(String.format("//li[@data-value='%s']", state));

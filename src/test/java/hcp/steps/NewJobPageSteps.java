@@ -8,8 +8,8 @@ import org.assertj.core.api.Assertions;
 
 public class NewJobPageSteps implements En {
 
-    NewJobPage newJobPage;
-    CommonValidators commonValidators;
+    private NewJobPage newJobPage;
+    private CommonValidators commonValidators;
 
     public NewJobPageSteps(NewJobPage newJobPage, CommonValidators commonValidators) {
         this.newJobPage = newJobPage;

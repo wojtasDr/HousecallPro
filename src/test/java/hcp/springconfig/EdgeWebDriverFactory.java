@@ -13,7 +13,7 @@ import java.time.Duration;
 @Configuration
 public class EdgeWebDriverFactory {
     @Value("${edge.driver.location}")
-    String edgeDriverLocation;
+    private String edgeDriverLocation;
 
     @Bean
     @Profile("edge")

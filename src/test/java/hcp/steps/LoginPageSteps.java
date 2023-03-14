@@ -5,7 +5,7 @@ import io.cucumber.java8.En;
 
 public class LoginPageSteps implements En {
 
-    LoginPage loginPage;
+    private LoginPage loginPage;
 
     public LoginPageSteps(LoginPage loginPage) {
         this.loginPage = loginPage;

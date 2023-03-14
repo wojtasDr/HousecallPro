@@ -14,7 +14,7 @@ import java.time.Duration;
 @Configuration
 public class ChromeMacWebDriverFactory {
     @Value("${chrome.mac.driver.location}")
-    String chromeDriverLocation;
+    private String chromeDriverLocation;
 
     @Bean
     @Profile("chromeMac")

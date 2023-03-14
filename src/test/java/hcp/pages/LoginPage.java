@@ -15,16 +15,16 @@ public class LoginPage {
     private WebDriver driver;
 
     @FindBy(id = "email")
-    WebElement emailInput;
+    private WebElement emailInput;
 
     @FindBy(id = "password")
-    WebElement passwordInput;
+    private WebElement passwordInput;
 
     @FindBy(xpath = "//button/*[contains(text(),'ign in')]")
-    WebElement signInButton;
+    private WebElement signInButton;
 
     @Value("${hcp.login.page.url}")
-    String housecallProLoginPageUrl;
+    private String housecallProLoginPageUrl;
 
     @Autowired
     public LoginPage(WebDriver driver) {

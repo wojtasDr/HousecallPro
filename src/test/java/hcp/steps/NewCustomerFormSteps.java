@@ -5,7 +5,7 @@ import io.cucumber.java8.En;
 
 public class NewCustomerFormSteps implements En {
 
-    NewCustomerForm newCustomerForm;
+    private NewCustomerForm newCustomerForm;
 
     public NewCustomerFormSteps(NewCustomerForm newCustomerForm) {
         this.newCustomerForm = newCustomerForm;

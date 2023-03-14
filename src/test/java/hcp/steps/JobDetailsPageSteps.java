@@ -7,8 +7,8 @@ import io.cucumber.java8.En;
 
 public class JobDetailsPageSteps implements En {
 
-    JobDetailsPage jobDetailsPage;
-    CommonValidators commonValidators;
+    private JobDetailsPage jobDetailsPage;
+    private CommonValidators commonValidators;
 
     public JobDetailsPageSteps(JobDetailsPage jobDetailsPage, CommonValidators commonValidators) {
         this.jobDetailsPage = jobDetailsPage;

@@ -13,7 +13,7 @@ import java.time.Duration;
 @Configuration
 public class ChromeWebDriverFactory {
     @Value("${chrome.driver.location}")
-    String chromeDriverLocation;
+    private String chromeDriverLocation;
 
     @Bean
     @Profile("chrome")

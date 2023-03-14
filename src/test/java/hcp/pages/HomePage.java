@@ -14,10 +14,10 @@ public class HomePage {
     private WebDriver driver;
 
     @FindBy(xpath = "//button/*[contains(text(),'New')]")
-    WebElement newButton;
+    private WebElement newButton;
 
     @FindBy(xpath = "//*[text()='Job']")
-    WebElement newJobButton;
+    private WebElement newJobButton;
 
     @Autowired
     public HomePage(WebDriver driver) {

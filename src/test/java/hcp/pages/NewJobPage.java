@@ -22,43 +22,43 @@ public class NewJobPage {
 
     //Header elements
     @FindBy(xpath = "//button/*[contains(text(),'ave job')]")
-    WebElement saveJobButton;
+    private WebElement saveJobButton;
 
     // Customer elements
     @FindBy(xpath = "//button/*[contains(text(),'ew customer')]")
-    WebElement newCustomerButton;
+    private WebElement newCustomerButton;
 
     @FindBy(xpath = "//*[text()='Customer']/../../../../..")
-    WebElement customerSection;
+    private WebElement customerSection;
 
     @FindBy(xpath = "//*[contains(text(),'ustomer history')]")
-    WebElement customerHistoryButton;
+    private WebElement customerHistoryButton;
 
     // Line items elements
     @FindBy(id = "item-name")
-    WebElement lineItemNameInput;
+    private WebElement lineItemNameInput;
 
     @FindBy(id = "qty")
-    WebElement lineItemQtyInput;
+    private WebElement lineItemQtyInput;
 
     @FindBy(id = "unit-price")
-    WebElement lineItemUnitPriceInput;
+    private WebElement lineItemUnitPriceInput;
 
     @FindBy(id = "description")
-    WebElement lineItemDescriptionInput;
+    private WebElement lineItemDescriptionInput;
 
     @FindBy(xpath = "//*[contains(text(),'nit cost')]/..//input")
-    WebElement lineItemUnitCostInput;
+    private WebElement lineItemUnitCostInput;
 
     @FindBy(xpath = "//*[text()='Total']/../..//h6")
-    WebElement totalValue;
+    private WebElement totalValue;
 
     // Private notes elements
     @FindBy(xpath = "//*[contains(text(),'ivate notes')]")
-    WebElement privateNotesLabel;
+    private WebElement privateNotesLabel;
 
     @FindBy(css = "[data-testid='private-notes-textfield']")
-    WebElement privateNotesTextarea;
+    private WebElement privateNotesTextarea;
 
     @Autowired
     public NewJobPage(WebDriver driver, WaitUtils waitUtils) {
